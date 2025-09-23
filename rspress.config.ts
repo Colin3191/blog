@@ -3,12 +3,9 @@ import { defineConfig } from 'rspress/config';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: 'My Site',
-  icon: '/rspress-icon.png',
-  logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
-  },
+  title: "Colin3191",
+  description: 'A personal blog with thoughts and insights',
+  icon: '/colin3191.jpg',
   themeConfig: {
     socialLinks: [
       {
@@ -17,5 +14,11 @@ export default defineConfig({
         content: 'https://github.com/Colin3191',
       },
     ],
+    nav: [
+      {
+        text: '博客',
+        link: '/',
+      }
+    ]
   },
 });
