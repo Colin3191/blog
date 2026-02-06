@@ -1,9 +1,10 @@
 import * as path from 'node:path';
-import { defineConfig } from 'rspress/config';
+import { defineConfig } from '@rspress/core';
+import { pluginRss } from '@rspress/plugin-rss';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: "Colin3191",
+  title: 'Colin3191',
   description: 'A personal blog with thoughts and insights',
   icon: '/colin3191.jpg',
   themeConfig: {
@@ -14,11 +15,11 @@ export default defineConfig({
         content: 'https://github.com/Colin3191',
       },
     ],
-    nav: [
-      {
-        text: '博客',
-        link: '/',
-      }
-    ]
   },
+  plugins: [
+    pluginRss({
+      siteUrl: 'https://colin3191.me',
+      feed: { id: 'blog', test: '/blog/', title: 'Colin3191 Blog' },
+    }),
+  ],
 });

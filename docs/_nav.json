@@ -1,0 +1,16 @@
+[
+  {
+    "text": "首页",
+    "link": "/",
+    "activeMatch": "^/$"
+  },
+  {
+    "text": "博客",
+    "link": "/blog/2025/2025-09-23-welcome",
+    "activeMatch": "^/blog/"
+  },
+  {
+    "text": "关于",
+    "link": "/about"
+  }
+]

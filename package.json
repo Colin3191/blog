@@ -3,21 +3,23 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rspress build",
-    "dev": "rspress dev",
+    "gen": "node scripts/generate-index.mjs",
+    "build": "node scripts/generate-index.mjs && rspress build",
+    "dev": "node scripts/generate-index.mjs && rspress dev",
     "format": "prettier --write .",
     "lint": "eslint .",
     "preview": "rspress preview"
   },
-  "dependencies": {
-    "rspress": "^1.40.2"
-  },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
+    "@rspress/plugin-rss": "^2.0.2",
     "@types/node": "^18.11.17",
     "eslint": "^9.19.0",
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
     "typescript-eslint": "^8.22.0"
+  },
+  "dependencies": {
+    "@rspress/core": "^2.0.2"
   }
 }
