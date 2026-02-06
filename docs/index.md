@@ -1,5 +1,9 @@
 # Colin3191's Blog
 
+## 2026年
+
+- [Next.js 入门（一）：App Router 项目结构与路由](/blog/2026/2026-02-06-nextjs-getting-started-part1) - 2026-02-06
+
 ## 2025年
 
 - [LangChain.js RAG 实战（上）：环境搭建与文档处理](/blog/2025/2025-12-31-RAG1) - 2025-12-31
