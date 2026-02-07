@@ -2,6 +2,7 @@
 
 ## 2026年
 
+- [Next.js 入门（二）：导航与链接](/blog/2026/2026-02-07-nextjs-getting-started-part2) - 2026-02-07
 - [Next.js 入门（一）：App Router 项目结构与路由](/blog/2026/2026-02-06-nextjs-getting-started-part1) - 2026-02-06
 
 ## 2025年
